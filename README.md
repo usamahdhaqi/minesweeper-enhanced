@@ -5,6 +5,14 @@ Aplikasi ini dibuat sebagai mini-project untuk memperkaya portofolio GitHub Saya
 
 ---
 
+## 📛 Badges
+![npm](https://img.shields.io/badge/npm-v10.0.0-blue)
+![license](https://img.shields.io/badge/license-MIT-green)
+![GitHub stars](https://img.shields.io/github/stars/usamahdhaqi/minesweeper-enhanced?style=social)
+![GitHub forks](https://img.shields.io/github/forks/usamahdhaqi/minesweeper-enhanced?style=social)
+
+---
+
 ## ✨ Fitur Utama
 - 🎯 **3 Mode Permainan**
   - Beginner (9x9, 10 mines)
