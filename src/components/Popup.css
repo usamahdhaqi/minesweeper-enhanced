@@ -1,3 +1,9 @@
+.popup-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -35,9 +41,26 @@
   border-radius: 8px;
   border: none;
   cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.popup-card .btn-ok {
   background: #67C090;
   color: #fff;
-  font-weight: bold;
+}
+
+.popup-card .btn-ok:hover {
+  background: #26667F;
+}
+
+.popup-card .btn-restart {
+  background: #C0C9EE;
+  color: #222;
+}
+
+.popup-card .btn-restart:hover {
+  background: #898AC4;
 }
 
 .popup-card button:hover {

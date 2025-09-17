@@ -3,7 +3,6 @@ import Board from "./components/Board";
 import Header from "./components/Header";
 import Popup from "./components/Popup";
 import "./App.css";
-import "./themes.css";
 
 const PRESETS = {
   Beginner: { rows: 9, cols: 9, mines: 10 },
@@ -36,14 +35,9 @@ function generateBoard(rows, cols, mines) {
 
   // hitung angka sekitar
   const dirs = [
-    [-1, -1],
-    [-1, 0],
-    [-1, 1],
-    [0, -1],
-    [0, 1],
-    [1, -1],
-    [1, 0],
-    [1, 1],
+    [-1, -1], [-1, 0], [-1, 1],
+    [0, -1],          [0, 1],
+    [1, -1], [1, 0], [1, 1],
   ];
 
   board = board.map((row, r) =>
@@ -71,7 +65,6 @@ export default function App() {
   const [board, setBoard] = useState([]);
   const [timer, setTimer] = useState(0);
   const [running, setRunning] = useState(false);
-  const [theme, setTheme] = useState("theme-light");
   const [popup, setPopup] = useState({ show: false, type: "", message: "" });
 
   // update rows/cols/mines ketika preset berubah
@@ -159,7 +152,7 @@ export default function App() {
   }
 
   return (
-    <div className={`app ${theme}`}>
+    <div className="app">
       <Header
         timer={timer}
         minesLeft={mines}
@@ -174,16 +167,15 @@ export default function App() {
           onRightClick={onRightClick}
         />
       )}
-      <div className="controls">
-        <button onClick={() => setTheme("theme-light")}>🌞 Light</button>
-        <button onClick={() => setTheme("theme-dark")}>🌙 Dark</button>
-      </div>
-
       <Popup
         show={popup.show}
         type={popup.type}
         message={popup.message}
         onClose={() => setPopup({ show: false, type: "", message: "" })}
+        onRestart={() => {
+          setPopup({ show: false, type: "", message: "" });
+          resetGame();
+        }}
       />
     </div>
   );
