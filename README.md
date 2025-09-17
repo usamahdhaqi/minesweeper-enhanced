@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# 🕹️ Minesweeper Enhanced
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Minesweeper Enhanced adalah versi modern dari game klasik **Minesweeper**, dibangun dengan **React.js**.  
+Aplikasi ini dibuat sebagai mini-project untuk memperkaya portofolio GitHub Saya. 🎉
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Fitur Utama
+- 🎯 **3 Mode Permainan**
+  - Beginner (9x9, 10 mines)
+  - Intermediate (16x16, 40 mines)
+  - Expert (16x30, 99 mines)
+- ⏱️ **Timer Otomatis** (mulai saat klik pertama)
+- 🚩 **Flagging System** untuk menandai lokasi bom
+- 🔄 **Reset Game** dengan sekali klik
+- 📊 **Popup Cantik** untuk menang / kalah, lengkap dengan tombol *Play Again*
+- 🎨 **UI Aesthetic** dengan palet warna lembut (#DDF4E7, #67C090, #26667F, #124170)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📸 Preview
+![Minesweeper Enhanced Screenshot](https://via.placeholder.com/800x400.png?text=Minesweeper+Enhanced+Preview)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Teknologi yang Digunakan
+- [React.js](https://react.dev/) (Frontend)
+- CSS3 (Styling, responsive layout)
+- Grid Algorithm + Recursive Reveal untuk logika permainan
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🚀 Cara Menjalankan
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone Repository
+```bash
+git clone https://github.com/usamahdhaqi/minesweeper-enhanced.git
+cd minesweeper-enhanced
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Install Dependencies
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Jalankan Aplikasi
+```bash
+npm start
+```
+Buka browser di [http://localhost:3000](http://localhost:3000) 🚀
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📂 Struktur Project
+```
+src/
+ ┣ components/
+ ┃ ┣ Board.js
+ ┃ ┣ Cell.js
+ ┃ ┣ Header.js
+ ┃ ┗ Popup.js
+ ┣ App.js
+ ┣ App.css
+ ┗ index.js
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🏆 Screenshot Popup
+- **Menang 🎉**
+![Win Popup](https://via.placeholder.com/400x200.png?text=Win+Popup)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Kalah 💥**
+![Lose Popup](https://via.placeholder.com/400x200.png?text=Lose+Popup)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📈 To-Do / Pengembangan Selanjutnya
+- [ ] Tambah **first-click guarantee** (klik pertama selalu aman)
+- [ ] Tambah animasi 🎇 confetti saat menang
+- [ ] Deploy ke **Vercel / Netlify**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 👨‍💻 Kontribusi
+Pull Request selalu diterima dengan senang hati. Jangan lupa untuk **fork** repo ini sebelum berkontribusi.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 📜 Lisensi
+Project ini menggunakan lisensi **MIT** - silakan gunakan, modifikasi, dan sebarkan untuk belajar maupun produksi.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### ⭐ Jangan lupa kasih bintang di repo ini kalau menurutmu menarik!
